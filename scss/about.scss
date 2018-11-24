@@ -1,0 +1,145 @@
+@import "templateWork";
+
+
+body {
+  font-family: 'Nunito', 'Open Sans', sans-serif;
+font-style: normal;
+  @media (max-width:725px){
+    //font-size: .9em;
+  }
+  background-color: rgb(240,240,240);
+}
+a:visited{
+  color: inherit;
+}
+.subSection {
+  p {
+
+    font-size: 1.1em;
+    @media (max-width:1093px){
+      font-size: 1em;
+    }
+    @media (max-width:750px){
+      font-size: .9em;
+    }
+    line-height: normal;
+    height: auto;
+    border: 0;
+  }
+}
+.about {
+  margin-top: 10%;
+  img {
+    margin: auto;
+    width: 40%;
+    display: block;
+    margin-bottom: 10%;
+  }
+  .char_row {
+    margin-left:10%;
+    margin-top: 4rem;
+    p {
+      padding-right: 8rem;
+      @media(max-width: 640px){
+        padding-right: 1rem;
+      }
+    }
+    h1 {
+      padding-right: 10%;
+    }
+    img {
+      width: 60%;
+      margin-left: 0px;
+    }
+  }
+  .speech-bubble {
+    margin-bottom: 2rem;
+    padding:0 3%;
+    h1 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.7em;
+      line-height: 35px;
+      color: rgba(130,130,132,1);
+      //padding-right: 1rem;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.3em;
+      line-height: 30px;
+      color: rgba(130,130,132,1);
+      margin-bottom: .5rem;
+      font-family: 'Quicksand', sans-serif;
+      &:nth-child(1){
+        margin-bottom: 1rem;
+        font-family: 'Dosis', sans-serif;
+      }
+      @media (max-width:1000px){
+        font-size: 1.2em;
+      }
+      b {
+        color:rgb(227, 183, 104);;
+        //color:rgba(244, 118, 56,.8);
+        font-size: 1.5em;
+        @media (max-width:1000px){
+          font-size: 1.3em;
+        }
+      }
+      span {
+        color:rgba(80,80,80,1);
+        font-style: italic;
+        margin-top: 1rem;
+      }
+    }
+  }
+  .iconset {
+    margin-left: 4%;
+    margin-top: .5rem;
+    a {
+      color:rgba(130,130,132,1);
+    }
+    a:hover {
+      color: rgba(63,160,229,.5);
+      -webkit-transition: color $colorhoverTransTime; /* Safari */
+      transition: color $colorhoverTransTime;
+    }
+    i {
+      padding: 2% 5%;;
+      margin-top: 1rem;
+      &:nth-child(1){padding-left: 0px;}
+      span {
+        font-family: 'Quicksand', 'Open Sans', sans-serif;
+        font-weight: 600;
+      font-style: normal;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      }
+    }
+  }
+
+  .completeWork{
+    text-align: center;
+    margin-top: 4%;
+    a{
+      margin-top: 2%;
+      border-radius: 10px;
+      border: 3px solid rgb(244, 118, 56);
+      color:rgb(244, 118, 56);
+      padding: 2%;
+      display: inline-block;
+    }
+    a:hover{
+      color:rgba(244, 118, 56,.7);
+      border: 3px solid rgba(244, 118, 56,.7);
+      background-color: rgba(120,120,120,.2);
+      transition: all 1s;
+    }
+  }
+}
+
+@include buttonCustom(rgb(200,200,200),rgb(240,240,240),.7rem);
+footer {
+  padding-top: 10rem;
+  @media (max-width:640px){
+  }
+}

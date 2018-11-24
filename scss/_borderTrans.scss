@@ -1,0 +1,95 @@
+$circleFill_color: rgb(242,177,52);
+$splitFill_color: rgb(242,177,52);
+$afterBorderWeight: 0px;
+
+.circleFill {
+    transition: color 0.25s;
+
+  &::before,
+  &::after {
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: $afterBorderWeight solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  // This covers the top & right borders (expands right, then down)
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  // And this the bottom & left borders (expands left, then up)
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    color: $circleFill_color;
+    //background-color: rgba(120,120,120,.8);
+    //transition: background-color 1s;
+    img {
+      //width: 100px;
+      //transition: all 1s;
+    }
+    h1{
+      color: $circleFill_color;
+      transition: all .3s;
+    }
+  }
+
+  // Hover styles
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    border-top-color: $circleFill_color; // Make borders visible
+    border-right-color: $circleFill_color;
+    transition:
+      width 0.25s ease-out, // Width expands first
+      height 0.25s ease-out 0.25s; // And then height
+  }
+
+  &:hover::after {
+    border-bottom-color: $circleFill_color; // Make borders visible
+    border-left-color: $circleFill_color;
+    transition:
+      border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+      width 0.25s ease-out 0.5s, // And then exanding width
+      height 0.25s ease-out 0.75s; // And finally height
+  }
+}
+
+// Inherits from .circleFill
+.splitFill {
+
+  &:hover {
+    color: $splitFill_color;
+  }
+
+
+  // Start ::after in same position as ::before
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+  // Change colors
+  &:hover::before {
+    border-top-color: $splitFill_color;
+    border-right-color: $splitFill_color;
+  }
+
+  &:hover::after {
+    border-bottom-color: $splitFill_color;
+    border-left-color: $splitFill_color;
+    transition: // Animate height first, then width
+      height 0.25s ease-out,
+      width 0.25s ease-out 0.25s;
+  }
+
+}
