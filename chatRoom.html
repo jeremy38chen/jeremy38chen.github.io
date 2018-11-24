@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Jeremy Chen">
+    <meta name="keywords" content="UX,HCI,User Experience,Engineer, Front-End, Jeremy, Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Jeremy Chen</title>
+    <link rel="stylesheet" href="css/chatRoom.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="img/work/icon.png">
+  </head>
+  <body>
+    <main class="container_12 clear">
+      <header class="grid_2">
+        <a href="index.html"><img src="img/work/icon.png" alt="Jeremy"></a>
+      </header>
+      <nav class="grid_10 nav-header">
+        <ul>
+          <li><a  href="about.html">About</a></li>
+          <li><a class="active" href="index.html">Work</a></li>
+        </ul>
+      </nav>
+      <!-- Main title -->
+      <section class="grid_12">
+        <div class="mainTitle">
+          <h1>Chatroom</h1>
+          <div></div><!-- Draw a line -->
+          <h5>Implement chatroom with C/C++</h5>
+        </div>
+      </section>
+      <!-- Main picture -->
+      <section class="grid_12">
+        <div class="mainPic">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/kZvMfGuKcG0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </section>
+      <!-- Key point -->
+      <section class="grid_12 keyPoint">
+        <div class="row">
+          <div class="grid_4">
+            <h4>Objective:</h4>
+            <h5>The goal of this project is to establish TCP connection between one server and multiple client with C/C++.</h5>
+          </div>
+          <div class="grid_8">
+            <div class="grid_4">
+              <div class="grid_12">
+                <h4>Duration:</h4>
+                <h5>2 Weeks</h5>
+              </div>
+              <div class="grid_12">
+                <h4></h4>
+                <h5></h5>
+              </div>
+            </div>
+            <div class="grid_4">
+              <h4>Team:</h4>
+              <h5>Jeremy Chen</h5>
+            </div>
+            <div class="grid_4">
+              <div class="grid_12">
+                <h4>Roles:</h4>
+                <h5>Programmer</h5>
+              </div>
+              <div class="grid_12">
+                <h4>Skills:</h4>
+                <h5>C/C++</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ideation -->
+      <section id="introduction" class="grid_12 subSection introduction">
+        <div class="row completeWork">
+          <div class="grid_12">
+            <a href="https://github.com/jeremy38chen/Internet-Program--ChatRoom" target="_blank">Clone this project</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="grid_12">
+            <h2>Introduction</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="grid_12">
+            <p>
+              When the connection between server and client is established, it is easy for them to interact with each other. However, what if the server is blocking on waiting an incoming connection when there is a new coming data from existed client. It will appear some issues when multi-client wants to connect with one server. A server cannot deal with the action of sending acceptation to a new client and receiving data from existed client simultaneously. Then how do we settle this kind of problem?
+              The function <i>select()</i> gives us the ability to monitor several sockets at the same time. I am going to take the code of chatting room written by me as an example. The figure below shows how the function <i>select()</i> solve this problem.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Prototyping -->
+      <section id="implement" class="grid_12 subSection implement">
+        <div class="row">
+          <div class="grid_12">
+            <h2>Implement</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="grid_12">
+            <img src="img/chatRoom/chatRoom.jpg" alt="chatRoom">
+          </div>
+        </div>
+        <div class="row server">
+          <div class="grid_12">
+            <h2>Server</h2>
+            <p>If the device is a server which needs to handle several clients, it turns good use of the function select() to send acceptation to new client and receive data from existed client. There are eight main steps for server to establish connection with multi-client.
+            </p>
+          </div>
+          <div class="grid_12">
+            <h3>Step 1 </h3>
+            <p>Using the function <i>socket()</i> to create a socket to communicate with client.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=create_socket.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 2</h3>
+            <p>Inserting some value including IP and Port into the <i>struct sockaddr_in</i>.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=insert_ip_port.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 3</h3>
+            <p>The function <i>bind()</i> helps to associate the socket with a port on your computer.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=bind.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 4</h3>
+            <p>Making good use of the function <i>listen()</i> to wait for incoming connections.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=listen.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 5</h3>
+            <p>The function <i>select()</i> gives assistance to determine whether there is a new coming connection or new data.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=select.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 6</h3>
+            <p>If there is a new connection, server sends acceptation and “Nice to meet you” to new client.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=new.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 7</h3>
+            <p>If there is an active connection, server receives the data from existed client and replies the message.</p>
+          <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=active.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 8</h3>
+            <p>Run through the step 5 to step 7 for looking for new connection or new data.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=while.c"></script>
+          </div>
+
+        </div>
+        <div class="row client">
+          <div class="grid_12">
+            <h2>Client</h2>
+            <p>The code for client is a little bit same as the code for the connection between server and one client. The only different is the additional code for chatting with server. The code involves 5 steps.
+            </p>
+          </div>
+          <div class="grid_12">
+            <h3>Step 1 </h3>
+            <p>Using the function <i>socket()</i> to create a socket to communicate with client.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=create_socket.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 2</h3>
+            <p>Inserting some value including IP and Port into the <i>struct sockaddr_in</i>.</p>
+            <script src="https://gist.github.com/jeremy38chen/70052ef1585768bd2d555f5abf43335e.js?file=insert_ip_port.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 3</h3>
+            <p>The function <i>connect()</i> helps to send request for connection with server.</p>
+            <script src="https://gist.github.com/jeremy38chen/c79ee1f0cb3e7ae83450eb005979db5c.js?file=connect.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 4</h3>
+            <p>After the connection is established, client will receive the first message “Nice to meet you” from server.</p>
+            <script src="https://gist.github.com/jeremy38chen/86f771adf344b9e41c8b0283e7e3bcd7.js?file=receive.c"></script>
+          </div>
+          <div class="grid_12">
+            <h3>Step 5</h3>
+            <p>Now it is ready for client and server to chat with each other.</p>
+            <script src="https://gist.github.com/jeremy38chen/86f771adf344b9e41c8b0283e7e3bcd7.js?file=while.c"></script>
+          </div>
+        </div>
+      </section>
+      <footer class="grid_12">
+          <a href="index.html"><h2><i class="fa fa-arrow-circle-left"></i> Back to Home</h2></a>
+          <p>Jeremy Chen</p>
+          <div>
+            <a href="https://github.com/jeremy38chen" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            <a href="report/Jeremy-resume.pdf" target="_blank"><i class="fa fa-id-card-o fa-2x"></i></a>
+            <a href="mailto:jeremy38chen@utexas.edu"><i class="fa fa-envelope-o fa-2x"></i></a>
+          </div>
+          <span>Powered by Jeremy Chen</span>
+      </footer>
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/subNav.js"></script>
+  </body>
+</html>
