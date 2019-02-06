@@ -628,18 +628,29 @@ h2 {
   100% {
     color: #828284; } }
   .mPage_quote span.bold {
-    font-weight: bold;
+    font-weight: 600;
     padding: 0;
     margin: 0;
-    display: inline-block; }
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.9rem; }
   .mPage_quote span.position {
     font-size: 1rem;
     display: inline-block;
     padding: 0;
     margin-left: 1rem;
     display: inline-block; }
+    @media (max-width: 650px) {
+      .mPage_quote span.position {
+        display: block;
+        margin-left: 0px;
+        margin-top: .3rem;
+        margin-bottom: 2rem; } }
   .mPage_quote span.wave {
     color: #646464;
+    text-transform: uppercase; }
+  .mPage_quote span.passion {
+    color: #e3b768;
     text-transform: uppercase; }
   .mPage_quote span {
     font-size: 1.3em;
@@ -649,18 +660,16 @@ h2 {
     display: block;
     line-height: 2rem;
     padding: 1% 15% 1% 10%; }
-    .mPage_quote span:nth-child(1) {
-      margin-top: 1rem;
+    .mPage_quote span.firstline {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
       font-family: 'Dosis', sans-serif;
-      font-weight: bold;
-      font-size: 2rem; }
+      font-weight: 500;
+      font-size: 1.4rem; }
     @media (max-width: 650px) {
       .mPage_quote span {
         font-size: 1em;
         line-height: normal; } }
-  .mPage_quote span.passion {
-    color: #e3b768;
-    text-transform: uppercase; }
   .mPage_quote .iconset {
     margin-left: 10%;
     margin-top: .7rem; }

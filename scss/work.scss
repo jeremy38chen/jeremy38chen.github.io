@@ -108,10 +108,12 @@ h2 {
        }
    }
    span.bold {
-     font-weight: bold;
+     font-weight: 600;
      padding: 0;
      margin:0;
      display: inline-block;
+     font-family: 'Dosis', sans-serif;
+     font-size: 1.9rem;
    }
    span.position{
      font-size: 1rem;
@@ -119,11 +121,25 @@ h2 {
      padding: 0;
      margin-left:1rem;
      display: inline-block;
+     @media (max-width: 650px){
+       display: block;
+       margin-left: 0px;
+       margin-top: .3rem;
+       margin-bottom: 2rem;
+       //margin-top: 1rem;
+     }
    }
    span.wave {
       //color:#4A90E2;
       color:rgb(100,100,100);
       text-transform: uppercase;
+      //font-family: 'Dosis', sans-serif;
+   }
+   span.passion {
+     color:rgb(227, 183, 104);
+     text-transform: uppercase;
+     //font-family: 'Dosis', sans-serif;
+     //margin: 0 1rem;
    }
    span {
      //-webkit-animation:colorchange 4s 1 alternate;
@@ -138,21 +154,18 @@ h2 {
      padding: 1% 15% 1% 10%;
      //text-transform: uppercase;
      //border-left: 4px solid rgba(63,160,229,1);
-     &:nth-child(1){
-       margin-top:1rem;
+     &.firstline {
+       margin-top:2rem;
+       margin-bottom: 1rem;
       font-family: 'Dosis', sans-serif;
-      font-weight: bold;
-      font-size: 2rem;
+      font-weight: 500;
+      font-size: 1.4rem;
      }
      @media (max-width: 650px){
        font-size: 1em;
        line-height: normal;
        //margin-top: 1rem;
      }
-   }
-   span.passion {
-     color:rgb(227, 183, 104);
-     text-transform: uppercase;
    }
    .iconset {
      margin-left: 10%;
