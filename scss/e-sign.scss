@@ -50,7 +50,7 @@ div.Pic {
     font-size: 1.75rem;
     color: #2B2B2B;
     letter-spacing: 0;
-    margin-bottom: 1.16rem;
+    margin-bottom: 1.25rem;
     font-weight: 600;
     margin-top: 4.72rem;
   }
@@ -107,7 +107,7 @@ div.Pic {
   }
   span.bold {
     font-weight: 600;
-    color: rgb(48, 48, 48);
+    color: rgb(50, 50, 50);
       line-height: 29px;
       display: block;
       padding-left: 2rem;
@@ -142,7 +142,7 @@ div.Pic {
     p {
       font-size: 1.15rem;
       color: #555555;
-      font-weight: 600;
+      font-weight: 500;
 
     }
     span {
@@ -182,12 +182,12 @@ div.Pic {
     p {
         margin-top: .5rem;
         &.one{
-          font-weight: 700;
+          font-weight: 600;
           margin-bottom: 1rem;
         }
       &.second {
         margin-top: 2rem;
-        font-weight: 700;
+        font-weight: 600;
         margin-bottom: 1rem;
       }
     }
@@ -242,7 +242,7 @@ div.Pic {
   }
   span.bold {
     font-weight: 600;
-    color: rgb(48, 48, 48);
+    color: rgb(50, 50, 50);
       line-height: 29px;
       font-style: normal;
       margin-top: 1rem;

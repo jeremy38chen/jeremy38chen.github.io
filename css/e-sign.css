@@ -357,26 +357,44 @@ div.mainPic {
       letter-spacing: 0;
       line-height: 26px;
       margin-bottom: 2rem; }
-  .proposal .challenge h3 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #2B2B2B;
-    letter-spacing: 0;
-    margin-bottom: 1.25rem; }
-  .proposal .challenge p {
-    font-size: 1.13rem;
-    color: #555555;
-    font-weight: 400;
-    line-height: 29px; }
-    .proposal .challenge p span {
-      font-weight: 600;
+    .proposal .summary span {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #555555;
+      letter-spacing: 0;
+      line-height: 26px;
+      display: block; }
+      .proposal .summary span a:link {
+        color: #555555; }
+      .proposal .summary span a:visited {
+        color: #555555; }
+      .proposal .summary span a:hover {
+        color: rgba(63, 160, 229, 0.5);
+        -webkit-transition: color 0.3s;
+        /* Safari */
+        transition: color 0.3s; }
+  .proposal .challenge {
+    margin-left: 1rem; }
+    .proposal .challenge h3 {
+      font-size: 1.75rem;
+      font-weight: 500;
+      color: #2B2B2B;
+      line-height: 25px;
+      margin-bottom: 1.25rem; }
+    .proposal .challenge p {
       font-size: 1.13rem;
-      color: black;
+      color: #555555;
+      font-weight: 400;
       line-height: 29px; }
-    .proposal .challenge p:nth-of-type(1), .proposal .challenge p:nth-of-type(2) {
-      margin-bottom: 3.63rem; }
-    .proposal .challenge p:nth-of-type(3) {
-      margin-bottom: 2.63rem; }
+      .proposal .challenge p span {
+        font-weight: 600;
+        font-size: 1.13rem;
+        color: #323232;
+        line-height: 29px; }
+      .proposal .challenge p:nth-of-type(1), .proposal .challenge p:nth-of-type(2) {
+        margin-bottom: 3.63rem; }
+      .proposal .challenge p:nth-of-type(3) {
+        margin-bottom: 2.63rem; }
 
 nav.subNav {
   margin: 1% 0 10% 1%;
@@ -601,7 +619,7 @@ div.Pic {
     font-size: 1.75rem;
     color: #2B2B2B;
     letter-spacing: 0;
-    margin-bottom: 1.16rem;
+    margin-bottom: 1.25rem;
     font-weight: 600;
     margin-top: 4.72rem; }
   .container_text h2 {
@@ -645,7 +663,7 @@ div.Pic {
   line-height: 29px; }
 .before span.bold {
   font-weight: 600;
-  color: #303030;
+  color: #323232;
   line-height: 29px;
   display: block;
   padding-left: 2rem;
@@ -669,7 +687,7 @@ div.Pic {
 .before .principle p {
   font-size: 1.15rem;
   color: #555555;
-  font-weight: 600; }
+  font-weight: 500; }
 .before .principle span {
   font-size: 1.14rem;
   color: #7E589B;
@@ -698,11 +716,11 @@ div.Pic {
   .process .q p {
     margin-top: .5rem; }
     .process .q p.one {
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 1rem; }
     .process .q p.second {
       margin-top: 2rem;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 1rem; }
 
 .img_process {
@@ -748,7 +766,7 @@ div.Pic {
     margin-left: .3rem; }
   .Discovery span.bold {
     font-weight: 600;
-    color: #303030;
+    color: #323232;
     line-height: 29px;
     font-style: normal;
     margin-top: 1rem; }

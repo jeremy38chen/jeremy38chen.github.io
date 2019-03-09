@@ -224,15 +224,40 @@ div.mainPic {
       line-height: 26px;
       margin-bottom: 2rem;
     }
+    span{
+      font-weight: 400;
+      font-size: 1rem;
+      color: #555555;
+      letter-spacing: 0;
+      line-height: 26px;
+      display: block;
+      a:link {
+       color:#555555;
+     }
+
+      a:visited {
+
+          color:#555555;
+
+      }
+      a:hover {
+
+          color: rgba(63,160,229,.5);
+          -webkit-transition: color $colorhoverTransTime; /* Safari */
+          transition: color $colorhoverTransTime;
+      }
+    }
   }
   .challenge {
     //border: 1px solid black;
     //margin-left: 6.06rem;
+    margin-left: 1rem;
     h3 {
       font-size: 1.75rem;
-      font-weight: 600;
+      font-weight: 500;
       color: #2B2B2B;
-      letter-spacing: 0;
+      //letter-spacing: 1px;
+      line-height: 25px;
       margin-bottom: 1.25rem;
     }
     p {
@@ -243,7 +268,7 @@ div.mainPic {
       span {
         font-weight: 600;
         font-size: 1.13rem;
-        color: black;
+        color: rgb(50, 50, 50);
         line-height: 29px;
 
       }
