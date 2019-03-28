@@ -70,7 +70,7 @@
           </div>
         </section>
       </div>
-      <svg class="editorial"
+      <svg class="editorial lax" data-lax-preset="zoomIn" data-lax-translate-y="0 -0, vh 100"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 24 150 28"
@@ -156,9 +156,20 @@
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/sort.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lax.min.js"></script>
 
     <script>
     new WOW().init();
+            window.onload = function() {
+          lax.setup() // init
+
+          const updateLax = () => {
+            lax.update(window.scrollY)
+            window.requestAnimationFrame(updateLax)
+          }
+
+          window.requestAnimationFrame(updateLax)
+        }
 
 
 

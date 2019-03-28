@@ -99,6 +99,24 @@ div.Pic {
     width: 99%;
     display: block;
   }
+  .ideation {
+    img {
+      //margin: auto;
+      width: 95%;
+      display: block;
+    }
+    span {
+      margin-top: 0.5rem;
+      font-size: 1.13rem;
+      color: #555555;
+      font-style: italic;
+      font-weight: 300;
+      display: block;
+      margin-left: .1rem;
+      margin-bottom: 2.5rem;
+    }
+    margin-bottom: 2rem;
+  }
 
   h2 {
     margin-top: 1.89rem;
