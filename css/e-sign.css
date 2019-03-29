@@ -657,6 +657,7 @@ div.Pic {
 .before img {
   margin: auto;
   width: 99%;
+  opacity: .8;
   display: block; }
 .before .ideation {
   margin-bottom: 2rem; }
