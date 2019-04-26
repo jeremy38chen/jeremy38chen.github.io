@@ -908,6 +908,8 @@ div.bg {
     max-width: 100%;
     display: block;
     margin-top: 1rem; }
+  .Design .wireframe img.app {
+    max-width: 60%; }
   .Design .wireframe span {
     margin-top: 0.5rem;
     font-size: 1.13rem;
