@@ -619,6 +619,12 @@ h2 {
 .layer {
   z-index: 5; }
 
+.item {
+  margin-left: 8%; }
+  @media (max-width: 650px) {
+    .item {
+      margin-left: 0px; } }
+
 .fish {
   width: 100%;
   height: 500px;
@@ -630,8 +636,14 @@ h2 {
 .mPage_quote {
   padding: 5% 1.04% 0%;
   margin-left: 0px; }
+  @media (max-width: 650px) {
+    .mPage_quote {
+      padding-top: 0; } }
   .mPage_quote img {
     width: 100%; }
+    @media (max-width: 650px) {
+      .mPage_quote img {
+        width: 0%; } }
   .mPage_quote p {
     font-size: 1.5em;
     font-family: 'Quicksand', sans-serif;
@@ -684,10 +696,14 @@ h2 {
       font-family: 'Dosis', sans-serif;
       font-weight: 400;
       font-size: 1.4rem; }
+      @media (max-width: 650px) {
+        .mPage_quote span.firstline {
+          margin-bottom: 0rem;
+          margin-top: 0rem; } }
     @media (max-width: 650px) {
       .mPage_quote span {
-        font-size: 1em;
-        line-height: normal; } }
+        font-size: 1.2em;
+        line-height: 1.5em; } }
   .mPage_quote .iconset {
     margin-left: 10%;
     margin-top: .7rem; }

@@ -63,6 +63,13 @@ h2 {
 .layer {
   z-index: 5;
 }
+.item {
+  margin-left: 8%;
+  @media (max-width: 650px){
+    margin-left: 0px;
+  }
+
+}
 .fish {
   //background-image: url(../img/work/fish.svg);
   //background-repeat: no-repeat;
@@ -80,9 +87,15 @@ h2 {
  .mPage_quote {
    padding: 5% 1.04% 0%;
    margin-left: 0px;
+   @media (max-width: 650px){
+     padding-top: 0;
+   }
    //text-align: center;
     img {
       width: 100%;
+      @media (max-width: 650px){
+        width: 0%;
+      }
     }
      p {
        font-size: 1.5em;
@@ -160,10 +173,14 @@ h2 {
       font-family: 'Dosis', sans-serif;
       font-weight: 400;
       font-size: 1.4rem;
+      @media (max-width: 650px){
+        margin-bottom: 0rem;
+        margin-top:0rem;
+      }
      }
      @media (max-width: 650px){
-       font-size: 1em;
-       line-height: normal;
+       font-size: 1.2em;
+       line-height: 1.5em;
        //margin-top: 1rem;
      }
    }
