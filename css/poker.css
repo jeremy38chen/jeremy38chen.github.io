@@ -173,7 +173,9 @@ footer {
     color: #c8c8c8;
     font-size: .9em; }
     footer a h4 {
-      font-size: 2em;
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      line-height: normal;
       padding: 0px;
       margin: auto;
       border-left: 0px;
@@ -373,28 +375,26 @@ div.mainPic {
         -webkit-transition: color 0.3s;
         /* Safari */
         transition: color 0.3s; }
-  .proposal .challenge {
-    margin-left: 1rem; }
-    .proposal .challenge h3 {
-      font-size: 1.75rem;
-      font-weight: 500;
-      color: #2B2B2B;
-      line-height: 25px;
-      margin-bottom: 1.25rem; }
-    .proposal .challenge p {
+  .proposal .challenge h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #2B2B2B;
+    line-height: 25px;
+    margin-bottom: 1.25rem; }
+  .proposal .challenge p {
+    font-size: 1.13rem;
+    color: #555555;
+    font-weight: 400;
+    line-height: 29px; }
+    .proposal .challenge p span {
+      font-weight: 600;
       font-size: 1.13rem;
-      color: #555555;
-      font-weight: 400;
+      color: #323232;
       line-height: 29px; }
-      .proposal .challenge p span {
-        font-weight: 600;
-        font-size: 1.13rem;
-        color: #323232;
-        line-height: 29px; }
-      .proposal .challenge p:nth-of-type(1), .proposal .challenge p:nth-of-type(2) {
-        margin-bottom: 3.63rem; }
-      .proposal .challenge p:nth-of-type(3) {
-        margin-bottom: 2.63rem; }
+    .proposal .challenge p:nth-of-type(1), .proposal .challenge p:nth-of-type(2) {
+      margin-bottom: 3.63rem; }
+    .proposal .challenge p:nth-of-type(3) {
+      margin-bottom: 2.63rem; }
 
 nav.subNav {
   margin: 1% 0 10% 1%;

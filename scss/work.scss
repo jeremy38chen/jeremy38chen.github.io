@@ -494,6 +494,17 @@ box-shadow: 0px 0px 25px 3px rgba(200,200,200,1);
     //margin-top: 1rem;
   }
 }
+.size_superbig {
+  height: auto;
+  @media (min-width: 550px){
+    width: 93%;
+    //margin-top: 1rem;
+  }
+  @media (max-width: 551px){
+    width: 100%;
+    //margin-top: 1rem;
+  }
+}
 .size_small {
 
   height: auto;
