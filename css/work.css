@@ -9,7 +9,6 @@
 
 
 */
-@import url(https://fonts.googleapis.com/css?family=Bangers);
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -586,17 +585,15 @@ body {
   max-height: 100vh; }
 
 h1 {
-  font-size: 2.5em;
-  margin-top: 10.04%;
+  font-size: 2.2em;
+  margin-top: 1rem;
   font-weight: 600;
-  padding-left: 3.04%;
   margin-left: 0;
-  border-left: 6px solid #3fa0e5;
   color: #fafafa; }
   @media (min-width: 40em) {
     h1 {
       margin-left: 5.04%; } }
-  @media (max-width: 650px) {
+  @media (max-width: 760px) {
     h1 {
       font-size: 1.8em; } }
 
@@ -664,14 +661,14 @@ h2 {
     display: inline-block;
     font-family: 'Dosis', sans-serif;
     font-size: 1.9rem; }
-  .mPage_quote span.position {
+  .mPage_quote .position {
     font-size: 1rem;
     display: inline-block;
     padding: 0;
     margin-left: 1rem;
     display: inline-block; }
     @media (max-width: 650px) {
-      .mPage_quote span.position {
+      .mPage_quote .position {
         display: block;
         margin-left: 0px;
         margin-top: .3rem;
@@ -969,24 +966,6 @@ h2 {
   margin: 5px;
   padding: 10px;
   color: #262524; }
-  .element-item a {
-    display: inline-block;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    margin: 0; }
-  .element-item a:focus {
-    outline: 0; }
-  .element-item a:hover {
-    -webkit-box-shadow: 0px 0px 25px 3px #969696;
-    -moz-box-shadow: 0px 0px 25px 3px #969696;
-    box-shadow: 0px 0px 25px 3px #969696;
-    border: none;
-    transition: all .5s; }
-  .element-item img {
-    -webkit-box-shadow: 0px 0px 25px 3px #c8c8c8;
-    -moz-box-shadow: 0px 0px 25px 3px #c8c8c8;
-    box-shadow: 0px 0px 25px 3px #c8c8c8; }
   .element-item img.big {
     max-width: 100%;
     height: auto;
@@ -1001,22 +980,29 @@ h2 {
     display: inline-block; }
 
 .size_big {
-  height: auto; }
-  @media (min-width: 550px) {
+  height: auto;
+  width: 70%;
+  margin-right: 30%; }
+  @media (min-width: 40em) {
     .size_big {
-      width: 54%; } }
-  @media (max-width: 551px) {
+      margin-left: 3.04%; } }
+  @media (min-width: 640px) {
     .size_big {
-      width: 100%; } }
+      width: 90%; } }
+  @media (min-width: 850px) {
+    .size_big {
+      width: 60%; } }
 
 .size_superbig {
-  height: auto; }
-  @media (min-width: 550px) {
+  height: auto;
+  width: 60%; }
+  @media (min-width: 640px) {
     .size_superbig {
-      width: 93%; } }
-  @media (max-width: 551px) {
+      width: 100%;
+      margin: 2rem 0 0 0; } }
+  @media (min-width: 850px) {
     .size_superbig {
-      width: 100%; } }
+      width: 85%; } }
 
 .size_small {
   height: auto; }
@@ -1048,51 +1034,60 @@ h2 {
   margin: 0; }
 
 .content {
-  font-family: 'Lato',sans-serif;
-  text-align: center;
-  background-color: #2d55aa;
-  text-align: center;
-  min-height: 75vh;
-  margin: -.1em 0 0 0;
-  padding: 1em;
-  color: #eee;
-  font-size: 2em;
-  font-weight: 300; }
-
-.content {
-  font-size: 1em; }
-
-.content h1 {
-  margin-top: -1.3em;
-  font-weight: 100;
-  font-size: 5em;
-  user-select: none;
-  cursor: default; }
-
-/*prevent many large-by-comparison ripples by shrinking the height*/
-@media (max-width: 50em) {
-  .content h1 {
-    font-size: 12vmax; }
-
-  .editorial {
-    height: 17vw; } }
-.wrap {
-  display: inline-block;
-  padding: 0em 0.5em;
-  margin: 0 auto; }
-  .wrap span {
-    text-align: center;
-    font-weight: normal;
-    color: #f1be07;
-    text-transform: uppercase;
-    font-size: 2em;
-    white-space: nowrap;
-    font-size: 3.5vw;
-    z-index: 1000;
-    font-family: 'Bangers', cursive;
-    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.7); }
-  @media screen and (max-width: 56em) {
-    .wrap span {
-      font-size: 9vw; } }
+  margin-top: 0em; }
+  .content .row {
+    margin-top: 2rem; }
+    @media (min-width: 40em) {
+      .content .row {
+        margin-top: 2rem; } }
+  .content .top {
+    margin-top: 4rem; }
+  .content .e-sign h1 {
+    color: #7778C6; }
+  .content .e-sign .sm {
+    display: inline-block; }
+    @media (min-width: 40em) {
+      .content .e-sign .sm {
+        display: none; } }
+  .content .e-sign .lg {
+    display: none; }
+    @media (min-width: 40em) {
+      .content .e-sign .lg {
+        display: inline-block; } }
+  .content .classroom h1 {
+    color: #ce9e7a; }
+  .content .HAAM h1 {
+    color: #888559; }
+  .content .phoenix h1 {
+    color: #d1ad5e; }
+  .content .iSchool h1 {
+    color: #79bbc9; }
+  .content p {
+    margin-top: 1rem;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-left: 0;
+    color: #646464; }
+    @media (min-width: 40em) {
+      .content p {
+        margin-left: 5.04%; } }
+  .content a:hover h1, .content a:hover p {
+    color: rgba(63, 160, 229, 0.5);
+    -webkit-transition: color 0.3s;
+    /* Safari */
+    transition: color 0.3s; }
+  .content span {
+    color: #b1946f;
+    line-height: 1.1rem;
+    margin-left: 0rem;
+    padding: 0;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600; }
+    @media (min-width: 40em) {
+      .content span {
+        margin-left: 5.04%; } }
 
 /*# sourceMappingURL=work.css.map */
