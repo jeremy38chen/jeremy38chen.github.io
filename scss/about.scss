@@ -2,7 +2,7 @@
 
 
 body {
-  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-family: sans-serif,'Lato','Quicksand','Arial';
 font-style: normal;
   @media (max-width:725px){
     //font-size: .9em;
@@ -57,22 +57,21 @@ a:visited{
     padding:0 3%;
     h1 {
       margin-bottom: 1rem;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.7em;
       line-height: 35px;
       color: rgba(130,130,132,1);
       //padding-right: 1rem;
     }
     p {
-      font-weight: 400;
+      font-weight: 200;
       font-size: 1.3em;
-      line-height: 30px;
+      line-height: 2rem;;
       color: rgba(130,130,132,1);
       margin-bottom: .5rem;
-      font-family: 'Quicksand', sans-serif;
       &:nth-child(1){
         margin-bottom: 1rem;
-        font-family: 'Dosis', sans-serif;
+        //font-family: 'Dosis', sans-serif;
       }
       @media (max-width:1000px){
         font-size: 1.2em;
@@ -88,7 +87,9 @@ a:visited{
       span {
         color:rgba(80,80,80,1);
         font-style: italic;
+        font-family:'Open Sans', sans-serif;
         margin-top: 1rem;
+        font-weight: 300;
       }
     }
   }
@@ -108,8 +109,8 @@ a:visited{
       margin-top: 1rem;
       &:nth-child(1){padding-left: 0px;}
       span {
-        font-family: 'Quicksand', 'Open Sans', sans-serif;
-        font-weight: 600;
+        font-family: sans-serif, 'Quicksand', 'Open Sans';
+        font-weight: 500;
       font-style: normal;
       margin-left: 1rem;
       font-size: 1.2rem;

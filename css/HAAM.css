@@ -579,7 +579,7 @@ nav.sticky {
   border: 1px solid rgba(122, 122, 122, 0.5); }
 
 body {
-  font-family: 'Nunito', Georgia, sans-serif;
+  font-family: 'Nunito' , 'Lato', sans-serif,  'Arial';
   font-style: normal; }
 
 .subSection p {

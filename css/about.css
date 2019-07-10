@@ -579,7 +579,7 @@ nav.sticky {
   border: 1px solid rgba(122, 122, 122, 0.5); }
 
 body {
-  font-family: 'Nunito', 'Open Sans', sans-serif;
+  font-family: sans-serif,'Lato','Quicksand','Arial';
   font-style: normal;
   background-color: #f0f0f0; }
 
@@ -623,20 +623,18 @@ a:visited {
     padding: 0 3%; }
     .about .speech-bubble h1 {
       margin-bottom: 1rem;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.7em;
       line-height: 35px;
       color: #828284; }
     .about .speech-bubble p {
-      font-weight: 400;
+      font-weight: 200;
       font-size: 1.3em;
-      line-height: 30px;
+      line-height: 2rem;
       color: #828284;
-      margin-bottom: .5rem;
-      font-family: 'Quicksand', sans-serif; }
+      margin-bottom: .5rem; }
       .about .speech-bubble p:nth-child(1) {
-        margin-bottom: 1rem;
-        font-family: 'Dosis', sans-serif; }
+        margin-bottom: 1rem; }
       @media (max-width: 1000px) {
         .about .speech-bubble p {
           font-size: 1.2em; } }
@@ -649,7 +647,9 @@ a:visited {
       .about .speech-bubble p span {
         color: #505050;
         font-style: italic;
-        margin-top: 1rem; }
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 1rem;
+        font-weight: 300; }
   .about .iconset {
     margin-left: 4%;
     margin-top: .5rem; }
@@ -666,8 +666,8 @@ a:visited {
       .about .iconset i:nth-child(1) {
         padding-left: 0px; }
       .about .iconset i span {
-        font-family: 'Quicksand', 'Open Sans', sans-serif;
-        font-weight: 600;
+        font-family: sans-serif, 'Quicksand', 'Open Sans';
+        font-weight: 500;
         font-style: normal;
         margin-left: 1rem;
         font-size: 1.2rem; }

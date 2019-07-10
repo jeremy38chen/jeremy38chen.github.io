@@ -23,7 +23,7 @@ $colorhoverTransTime:.3s;
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: sans-serif,'Lato','Quicksand','Arial';
   //background-color: #323232;
   background-color: rgb(240,240,240);
 margin: 0;max-height: 100vh; //overflow:hidden;
@@ -32,7 +32,8 @@ margin: 0;max-height: 100vh; //overflow:hidden;
 h1 {
   font-size: 2.2em;
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif,'Quicksand','Arial';
   //padding-left: 3.04%;
   margin-left: 0;
   @include forLargeScreens(640){
@@ -99,7 +100,7 @@ h2 {
      p {
        font-size: 1.5em;
        //color: rgb(199, 154, 58);
-       font-family: 'Quicksand', sans-serif;
+       font-family: 'Lato',sans-serif,'Arial';
        font-weight: 400;
        color: rgba(130,130,132,1);
        //-webkit-animation:colorchange 4s 1 alternate;
@@ -124,7 +125,7 @@ h2 {
      padding: 0;
      margin:0;
      display: inline-block;
-     font-family: 'Dosis', sans-serif;
+     font-family: 'Dosis',sans-serif,'Arial';
      font-size: 1.9rem;
    }
    
@@ -159,8 +160,8 @@ h2 {
      //-webkit-animation-delay: 1s;
      font-size: 1.3em;
      color:rgba(130,130,130,1);
-     font-weight: 400;
-     font-family: 'Quicksand', sans-serif;
+     font-weight: 200;
+     font-family: sans-serif, 'Arial';
      display: block;
      line-height: 2rem;;
      //margin-top: 1rem;
@@ -611,7 +612,7 @@ h2 {
     font-size: 1.2em;
     line-height: 1.5em;
     //margin-top: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     //padding-left: 3.04%;
     margin-left: 0;
     @include forLargeScreens(640){
@@ -640,7 +641,7 @@ h2 {
     display: inline-block;
     margin-top: 1rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     @include forLargeScreens(640){
       margin-left: 5.04%;
     };

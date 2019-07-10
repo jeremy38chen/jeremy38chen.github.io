@@ -579,7 +579,7 @@ nav.sticky {
   border: 1px solid rgba(122, 122, 122, 0.5); }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: sans-serif,'Lato','Quicksand','Arial';
   background-color: #f0f0f0;
   margin: 0;
   max-height: 100vh; }
@@ -587,7 +587,8 @@ body {
 h1 {
   font-size: 2.2em;
   margin-top: 1rem;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif,'Quicksand','Arial';
   margin-left: 0;
   color: #fafafa; }
   @media (min-width: 40em) {
@@ -643,7 +644,7 @@ h2 {
         width: 0%; } }
   .mPage_quote p {
     font-size: 1.5em;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Lato',sans-serif,'Arial';
     font-weight: 400;
     color: #828284; }
     @media (max-width: 650px) {
@@ -659,7 +660,7 @@ h2 {
     padding: 0;
     margin: 0;
     display: inline-block;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis',sans-serif,'Arial';
     font-size: 1.9rem; }
   .mPage_quote .position {
     font-size: 1rem;
@@ -682,8 +683,8 @@ h2 {
   .mPage_quote span {
     font-size: 1.3em;
     color: #828282;
-    font-weight: 400;
-    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-family: sans-serif, 'Arial';
     display: block;
     line-height: 2rem;
     padding: 1% 15% 1% 10%; }
@@ -1066,7 +1067,7 @@ h2 {
     margin-top: 1rem;
     font-size: 1.2em;
     line-height: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 0;
     color: #646464; }
     @media (min-width: 40em) {
@@ -1085,7 +1086,7 @@ h2 {
     display: inline-block;
     margin-top: 1rem;
     font-size: 1rem;
-    font-weight: 600; }
+    font-weight: 400; }
     @media (min-width: 40em) {
       .content span {
         margin-left: 5.04%; } }
