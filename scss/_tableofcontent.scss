@@ -4,7 +4,7 @@
     img {
       max-width: 60%;
     }
-    font-family: 'Lato', sans-serif;
+    font-family: sans-serif, 'Nunito' , 'Lato', 'Arial';
     font-size:.85rem;
     font-style: normal;
     margin-left: 6%;
@@ -15,7 +15,7 @@
     }
     .toc{overflow-y:auto; font-weight:400; color: rgb(210,210,210);line-height: 2rem;;
       .is-active-link{
-        font-weight:700;
+        font-weight:500;
         color: rgb(100,100,100);
       }
     }

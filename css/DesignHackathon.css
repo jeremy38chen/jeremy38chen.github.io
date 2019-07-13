@@ -894,7 +894,7 @@ div.Pic {
   color: rgba(0, 0, 0, 0.4); }
 
 nav.tc {
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif, 'Nunito' , 'Lato', 'Arial';
   font-size: .85rem;
   font-style: normal;
   margin-left: 6%; }
@@ -910,7 +910,7 @@ nav.tc {
     color: #d2d2d2;
     line-height: 2rem; }
     nav.tc .toc .is-active-link {
-      font-weight: 700;
+      font-weight: 500;
       color: #646464; }
   nav.tc .toc > .toc-list {
     overflow: hidden;
