@@ -51,7 +51,7 @@ div.Pic {
     color: #2B2B2B;
     letter-spacing: 0;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 4.72rem;
   }
   h2 {
@@ -89,7 +89,7 @@ div.Pic {
 .challenge {
     h3{
       font-size: 1.1rem;
-      font-weight: 600;
+      font-weight: 500;
       color: #2B2B2B;
       letter-spacing: 1px;
       line-height: 25px;
@@ -137,8 +137,8 @@ div.Pic {
 
   }
   span.bold {
-    font-weight: 600;
-    color: rgb(50, 50, 50);
+    font-weight: 500;
+    color: rgb(155, 118, 90);
       line-height: 29px;
       display: block;
       padding-left: 2rem;
@@ -428,32 +428,6 @@ div.Pic {
     margin-left: 3rem;
     margin-bottom: 2.5rem;
   }
-  .principle {
-    .row {
-      margin-top:2rem;
-      .grid_6 {
-        padding-right: 1.5rem;
-      }
-    }
-    .grid_10 {
-      padding-left: 1rem;
-    }
-    h2 {
-      margin-bottom: 2rem;
-    }
-    p {
-      font-size: 1.13rem;
-      color: #3E3E3E;
-      font-weight: 500;
-    }
-    span {
-      font-size: 1.13rem;
-      color: #7E589B;
-      font-style: normal;
-      line-height: 29px;
-      margin-left: 0rem;
-    }
-  }
 }
 .Summary {
   margin-top: 2rem;
@@ -465,7 +439,23 @@ div.Pic {
   margin-top: 2rem;
   }
 }
+.summary {
+  h3.bold {
+    color:rgb(155, 118, 90);
+    font-weight: 600;
+  }
+}
+.proposal {
+  .challenge {
 
+    p {
+      span {
+        color: rgb(155, 118, 90);
+      }
+    }
+  
+  }
+}
 ///////////////////
 $main: #205593;
 $back: #F6F3EB;

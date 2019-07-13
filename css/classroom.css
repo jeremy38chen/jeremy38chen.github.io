@@ -347,8 +347,8 @@ div.mainPic {
         margin-bottom: 4rem; } }
     .proposal .summary h3 {
       font-size: 1rem;
-      font-weight: 600;
-      color: #2B2B2B;
+      font-weight: 500;
+      color: #1d1d1d;
       letter-spacing: 3px;
       line-height: 25px;
       margin-bottom: 0.19rem; }
@@ -387,9 +387,8 @@ div.mainPic {
     font-weight: 400;
     line-height: 29px; }
     .proposal .challenge p span {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.13rem;
-      color: #323232;
       line-height: 29px; }
     .proposal .challenge p:nth-of-type(1), .proposal .challenge p:nth-of-type(2) {
       margin-bottom: 3.63rem; }
@@ -620,7 +619,7 @@ div.Pic {
     color: #2B2B2B;
     letter-spacing: 0;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 4.72rem; }
   .container_text h2 {
     font-size: 1.38rem;
@@ -650,7 +649,7 @@ div.Pic {
 
 .challenge h3 {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #2B2B2B;
   letter-spacing: 1px;
   line-height: 25px;
@@ -687,8 +686,8 @@ div.Pic {
   margin-top: 1.89rem;
   line-height: 29px; }
 .before span.bold {
-  font-weight: 600;
-  color: #323232;
+  font-weight: 500;
+  color: #9b765a;
   line-height: 29px;
   display: block;
   padding-left: 2rem;
@@ -900,24 +899,6 @@ div.Pic {
   display: block;
   margin-left: 3rem;
   margin-bottom: 2.5rem; }
-.Experimentation .principle .row {
-  margin-top: 2rem; }
-  .Experimentation .principle .row .grid_6 {
-    padding-right: 1.5rem; }
-.Experimentation .principle .grid_10 {
-  padding-left: 1rem; }
-.Experimentation .principle h2 {
-  margin-bottom: 2rem; }
-.Experimentation .principle p {
-  font-size: 1.13rem;
-  color: #3E3E3E;
-  font-weight: 500; }
-.Experimentation .principle span {
-  font-size: 1.13rem;
-  color: #7E589B;
-  font-style: normal;
-  line-height: 29px;
-  margin-left: 0rem; }
 
 .Summary {
   margin-top: 2rem;
@@ -927,6 +908,13 @@ div.Pic {
       margin-top: 1rem; } }
   .Summary h2 {
     margin-top: 2rem; }
+
+.summary h3.bold {
+  color: #9b765a;
+  font-weight: 600; }
+
+.proposal .challenge p span {
+  color: #9b765a; }
 
 .pushme {
   position: relative;

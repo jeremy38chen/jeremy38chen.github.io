@@ -50,7 +50,7 @@ div.Pic {
     color: #2B2B2B;
     letter-spacing: 0;
     margin-bottom: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 4.72rem;
   }
   h2 {
@@ -124,8 +124,8 @@ div.Pic {
 
   }
   span.bold {
-    font-weight: 600;
-    color: rgb(50, 50, 50);
+    font-weight: 500;
+    color: #7E589B;
       line-height: 29px;
       display: block;
       padding-left: 2rem;
@@ -200,12 +200,12 @@ div.Pic {
     p {
         margin-top: .5rem;
         &.one{
-          font-weight: 600;
+          font-weight: 500;
           margin-bottom: 1rem;
         }
       &.second {
         margin-top: 2rem;
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 1rem;
       }
     }
@@ -259,8 +259,8 @@ div.Pic {
     margin-left: .3rem;
   }
   span.bold {
-    font-weight: 600;
-    color: rgb(50, 50, 50);
+    font-weight: 500;
+    color: #7E589B;
       line-height: 29px;
       font-style: normal;
       margin-top: 1rem;
@@ -456,9 +456,21 @@ div.Pic {
 .summary {
   h3.bold {
     color:#7E589B;
-    font-weight: 700;
+    font-weight: 600;
   }
 }
+.proposal {
+  .challenge {
+
+    p {
+      span {
+        color: rgb(112, 75, 145);
+      }
+    }
+  
+  }
+}
+
 
 ///////////////////
 $main: #205593;
