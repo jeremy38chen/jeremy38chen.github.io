@@ -1,0 +1,51 @@
+
+$colorMainHeader:#d3a27d;
+@import "templateGlobal";
+
+
+
+/////WAVE/////////////
+
+:selection{background-color: salmon; color: white;}
+.editorial {
+    margin-top: 4%;;
+    @media only screen and (max-width: 600px) {
+        margin-top: 8%;;
+    }
+}
+.parallax > use{
+  animation:move-forever 20s linear infinite;
+  &:nth-child(1){animation-delay:-2s;}
+  &:nth-child(2){animation-delay:-2s; animation-duration:10s}
+  &:nth-child(3){animation-delay:-4s; animation-duration:9s}
+}
+
+@keyframes move-forever{
+  0%{transform: translate(-90px , 0%)}
+  100%{transform: translate(85px , 0%)}
+}
+
+//////////////////
+
+/////portfolio-work/////
+
+.portfolio-work {
+    //padding: 0 10% !important;
+    
+    margin-top: 100px;;
+    h4.work-header {
+        margin-top: 10px;
+    }
+    p.work-info {
+        margin-bottom: 8px;
+    }
+    
+    .badge-info {
+        background-color: rgb(235, 235, 235) !important;
+        color:rgb(85, 85, 85) !important;
+        font-weight: 500 !important;
+    }
+    .row {
+        margin-bottom: 10%;
+    }
+}
