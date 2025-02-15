@@ -27,16 +27,14 @@ body a {
   color: #000;
 }
 body a:hover {
-  color: #868686;
+  color: rgb(134, 134, 134);
   opacity: 0.6;
-  -webkit-transition: 0.1s ease;
-  /* Safari */
+  -webkit-transition: 0.1s ease; /* Safari */
   transition: 0.1s ease;
 }
 body a:hover img {
   opacity: 0.6;
-  -webkit-transition: 0.1s ease;
-  /* Safari */
+  -webkit-transition: 0.1s ease; /* Safari */
   transition: 0.1s ease;
 }
 body a:link, body a:visited {
@@ -47,7 +45,7 @@ body a:link:active, body a:visited:active {
 }
 body mark {
   color: inherit;
-  background-color: #fceee2;
+  background-color: rgb(252, 238, 226);
   border-radius: 12%;
 }
 body mark.bold {

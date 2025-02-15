@@ -27,16 +27,14 @@ body a {
   color: #000;
 }
 body a:hover {
-  color: #868686;
+  color: rgb(134, 134, 134);
   opacity: 0.6;
-  -webkit-transition: 0.1s ease;
-  /* Safari */
+  -webkit-transition: 0.1s ease; /* Safari */
   transition: 0.1s ease;
 }
 body a:hover img {
   opacity: 0.6;
-  -webkit-transition: 0.1s ease;
-  /* Safari */
+  -webkit-transition: 0.1s ease; /* Safari */
   transition: 0.1s ease;
 }
 body a:link, body a:visited {
@@ -270,8 +268,8 @@ footer.bottomfooter p {
   margin-bottom: 8px;
 }
 .portfolio-work .badge-info {
-  background-color: #dadadaa7 !important;
-  color: #717171 !important;
+  background-color: rgba(218, 218, 218, 0.6549019608) !important;
+  color: rgb(113, 113, 113) !important;
   font-weight: 500 !important;
 }
 .portfolio-work .row {
